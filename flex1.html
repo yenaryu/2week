@@ -6,7 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    *{margin: 0; padding: 0;}
+    body{line-height: 1;}
+    header{background: #000; height: 100px;}
+    body{background: #ccc;}
+    main{width: 800px; margin: 10px auto;}
+    .box1{background: #fff; height: 200px; margin-bottom: 10px;}
+</style>
 <body>
-    
+    <header>
+        header
+    </header>
+
+    <main>
+        <div class="box1"></div>
+
+        <style>
+            .box2{display: flex; gap: 10px; margin-bottom: 10px;}
+            .box2 div{
+                background: #fff;
+                flex:1px;
+                height: 100px;}
+        </style>
+        <div class="box2">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <style>
+            .box3{display: flex; margin-bottom: 10px;}
+            .box3 div{
+                background: #fff;
+                flex:1px;
+                height: 100px;}
+            .box3 > *+*{margin-left: 10px;}
+        </style>
+        <div class="box3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <style>
+            .box4{display: flex; justify-content: space-between; 
+                  background: #fff;
+                  padding: 10px;}
+            .box4 div{
+                background: #000;
+                height: 200px;
+                width: calc(50% - 5px);}
+        </style>
+        <div class="box4">
+            <div></div>
+            <div></div>
+        </div>
+    </main>
 </body>
 </html>
