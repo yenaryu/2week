@@ -6,7 +6,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<style>
+    *{margin: 0;padding: 0;font: inherit;}
+    body{line-height: 1;}
+    ul{list-style: none;}
+    a{color:inherit; text-decoration: none;}
+    img{max-width: 100%; vertical-align: top;}
     
+    header{background: #000; height: 100px; position: relative; margin-bottom: 1px;}
+    header h1{background: #fff; position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 50px;
+        text-align: center;
+        }
+    header h1 a{display: block; height: 100%;}
+    
+    header div{background: #fff; width: 100px; height: 50px;}
+    header .sns{position: absolute;
+        top: 50%; left: 0;
+        transform: translateY(-50%);}
+    header .login{position: absolute;
+        top: 50%; right: 0;
+        transform: translateY(-50%);}
+</style>
+<body>
+    <header>
+        <h1><a href="logo">logo</a></h1>
+        <div class="sns">sns</div>
+        <div class="login">login</div>
+    </header>
+
+        <style>
+            .box1{background: #000; height: 300px; position: relative; }
+            .box1 .btn.prev{
+                position: absolute;
+                top: 50%; left: 10px;
+                transform: translateY(-50%);
+                background: #fff;
+                height: 50px;
+                width: 50px;
+                margin-left: 10px;
+            }
+            .box1 .btn.next{
+                position: absolute;
+                top: 50%; right:10px;
+                transform: translateY(-50%);
+                background: #fff;
+                height: 50px;
+                width: 50px;
+                margin-right: 10px;
+            }
+            .box1 .page{
+                position: absolute;
+                bottom: 0; left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                gap:10px;
+            }
+            .box1 span{
+                background: #fff;
+                border-radius: 50%;
+                flex:1;
+                width: 20px;
+                height: 20px;
+                margin: 10px 0;
+                text-align: center;                        
+            }
+            .box1 .page span.active{background: yellow;}
+        </style>
+    <main>
+        <section class="box1">
+            <a href="" class="btn prev">이전</a>
+            <a href="" class="btn next">다음</a>
+            <div class="page">
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+            </div>
+        </section>
+
+        <style>
+            .box2{padding: 50px 0;}
+            .box2 h2{text-align: center;
+                background: #000;
+                color:#fff;
+                width: 250px;
+                margin: 0 auto;
+                font-weight: bold;
+                font-size: 50px;
+                margin-bottom: 100px;}
+            .box2 ul{width: 800px; display: flex; margin: 0 auto; gap: 10px;}
+            .box2 ul li{background: #000; flex:1px;}
+            .box2 ul li a{display: block; height: 100%; padding: 10px;}
+            .box2 ul li img{object-fit: cover; height: 250px;}
+            .box2 ul li p{background: #fff;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 10px;
+                padding: 10px;}
+        </style>
+        <section class="box2">
+            <h2>제목</h2>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./image.jpg" alt="">
+                            <p>내용</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./image.jpg" alt="">
+                            <p>내용</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./image.jpg" alt="">
+                            <p>내용</p>
+                        </a>
+                    </li>
+                </ul>
+        </section>
+
+        <style>
+            .box3{background: #000; padding: 100px 0;}
+            .box3 ul{width: 800px; margin: 0 auto;}
+            .box3 ul li{background: #fff; margin-bottom: 10px; height: 100px;}
+            .box3 ul li:last-child{margin-bottom: 0;}
+        </style>
+        <section class="box3">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
